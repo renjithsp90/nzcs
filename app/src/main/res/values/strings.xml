@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NZCS</string>
+    <string name="nav_header_subtitle">New Zealand College Services</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_location">Location</string>
+    <string name="nav_header_courses">Courses</string>
+    <string name="nav_header_aboutus">About us</string>
+    <string name="nav_header_contactus">Contact us</string>
+    <string name="nav_header_poly">Polytechnics</string>
+    <string name="nav_header_uni">Universities</string>
+</resources>

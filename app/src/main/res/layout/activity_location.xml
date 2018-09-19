@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/activity_location"
+        android:id="@+id/location_content">
+
+    <Button
+        android:id="@+id/buttonAuckland"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="AUCKLAND"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/buttonDunedin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="DUNEDIN"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/buttonWellington"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="WELLINGTON"
+        app:layout_constraintTop_toBottomOf="@id/buttonAuckland"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/buttonChristchurch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="CHRISTCHURCH"
+        app:layout_constraintTop_toBottomOf="@id/buttonDunedin"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/buttonTauranga"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="TAURANGA"
+        app:layout_constraintTop_toBottomOf="@id/buttonChristchurch"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/buttonHamilton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="HAMILTON"
+        app:layout_constraintTop_toBottomOf="@id/buttonWellington"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/buttonTaurang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="TAURANGA2"
+        app:layout_constraintTop_toBottomOf="@id/buttonTauranga"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="15dp"/>
+
+    <Button
+        android:id="@+id/buttonHamiltoe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_location_city"
+        app:layout_constraintWidth_percent="0.45"
+        android:height="150dp"
+        android:text="HAMILTON2"
+        app:layout_constraintTop_toBottomOf="@id/buttonHamilton"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="15dp"/>
+        <Button
+            android:id="@+id/buttonTauran2g"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_location_city"
+            app:layout_constraintWidth_percent="0.45"
+            android:height="150dp"
+            android:text="TAURANGA2"
+            app:layout_constraintTop_toBottomOf="@id/buttonTaurang"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_margin="15dp"/>
+
+        <Button
+            android:id="@+id/buttonHamil3toe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_location_city"
+            app:layout_constraintWidth_percent="0.45"
+            android:height="150dp"
+            android:text="HAMILTON2"
+            app:layout_constraintTop_toBottomOf="@id/buttonHamiltoe"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="15dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
