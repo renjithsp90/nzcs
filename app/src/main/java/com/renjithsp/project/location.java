@@ -9,6 +9,7 @@ public class location extends BaseDrawerActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_location);
+        getLayoutInflater().inflate(R.layout.app_bar_main, frameLayout);
         getLayoutInflater().inflate(R.layout.activity_location, frameLayout);
         toolbar.setTitle(getResources().getString(R.string.nav_header_location));
 

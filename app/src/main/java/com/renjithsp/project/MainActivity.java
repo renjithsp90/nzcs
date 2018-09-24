@@ -24,6 +24,7 @@ public class MainActivity extends BaseDrawerActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_location);
         getLayoutInflater().inflate(R.layout.activity_main, frameLayout);
+        getLayoutInflater().inflate(R.layout.content_main, frameLayout);
 
     }
     @Override

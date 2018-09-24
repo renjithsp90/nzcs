@@ -26,7 +26,8 @@
         <activity android:name=".about" />
         <activity android:name=".poly" />
         <activity android:name=".uni" />
-        <activity android:name=".BaseDrawerActivity"></activity>
+        <activity android:name=".BaseDrawerActivity" />
+        <activity android:name=".view_detail"></activity>
     </application>
 
 </manifest>
