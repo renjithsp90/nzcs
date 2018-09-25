@@ -1,7 +1,11 @@
 package com.renjithsp.project;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class location extends BaseDrawerActivity {
 
@@ -12,7 +16,16 @@ public class location extends BaseDrawerActivity {
         getLayoutInflater().inflate(R.layout.app_bar_main, frameLayout);
         getLayoutInflater().inflate(R.layout.activity_location, frameLayout);
         toolbar.setTitle(getResources().getString(R.string.nav_header_location));
+        final Context context = this;
 
+        Button btnAuckland = (Button)findViewById(R.id.buttonAuckland);
+        btnAuckland.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, ShowListActivity.class);
+                startActivity(intent);
+            }
+        });
     }
     @Override
     protected void onResume() {
