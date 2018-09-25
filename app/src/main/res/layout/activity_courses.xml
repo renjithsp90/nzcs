@@ -1,21 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/app_bar_main"
-    android:id="@+id/main_content">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Courses"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".MainActivity"
+        tools:showIn="@layout/app_bar_main"
+        android:id="@+id/main_content">
 
-</android.support.constraint.ConstraintLayout>
+
+        <Button
+            android:id="@+id/buttonHospitality"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:height="150dp"
+            android:drawableTop="@drawable/ic_local_courses"
+            android:text="HOSPITALITY MANAGEMENT"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintWidth_percent="0.45" />
+
+            <Button
+                android:id="@+id/buttonBusiness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="BUNINESS MANAGEMENT"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/buttonRetail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="RETAIL INDUSTRY"
+                app:layout_constraintTop_toBottomOf="@id/buttonHospitality"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/buttonConstruction"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="CONSTRUCTION MANAGEMENT"
+                app:layout_constraintTop_toBottomOf="@id/buttonBusiness"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/buttonElectrical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="ELECTRICAL ENGINEERING"
+                app:layout_constraintTop_toBottomOf="@id/buttonRetail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/buttonIT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="INFORMATION TECHNOLOGY"
+                app:layout_constraintTop_toBottomOf="@id/buttonConstruction"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/buttonApplied"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="APPLIED MANAGEMENT"
+                app:layout_constraintTop_toBottomOf="@id/buttonElectrical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/buttonMarketing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="MARKETING"
+                app:layout_constraintTop_toBottomOf="@id/buttonIT"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="15dp"/>
+            <Button
+                android:id="@+id/buttonLogistics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="LOGISTICS"
+                app:layout_constraintTop_toBottomOf="@id/buttonApplied"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_margin="15dp"/>
+
+            <Button
+                android:id="@+id/buttonMechanical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_local_courses"
+                app:layout_constraintWidth_percent="0.45"
+                android:height="150dp"
+                android:text="MECHANICAL ENGINEERING"
+                app:layout_constraintTop_toBottomOf="@id/buttonMarketing"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="15dp"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>

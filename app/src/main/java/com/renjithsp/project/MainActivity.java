@@ -18,13 +18,14 @@ import android.view.MenuItem;
 import android.widget.FrameLayout;
 
 public class MainActivity extends BaseDrawerActivity {
-
+    public static DbHelper db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_location);
         getLayoutInflater().inflate(R.layout.activity_main, frameLayout);
-
+        getLayoutInflater().inflate(R.layout.content_main, frameLayout);
+        db = new DbHelper(this);
     }
     @Override
     protected void onResume() {
