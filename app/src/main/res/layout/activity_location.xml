@@ -23,9 +23,10 @@
         android:drawableTop="@drawable/ic_location_city"
         app:layout_constraintWidth_percent="0.45"
         android:height="150dp"
-        android:text="AUCKLAND"
+        android:text="Auckland"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
 
     <Button
         android:id="@+id/buttonDunedin"
@@ -36,7 +37,8 @@
         android:height="150dp"
         android:text="DUNEDIN"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
 
     <Button
         android:id="@+id/buttonWellington"
@@ -48,7 +50,8 @@
         android:text="WELLINGTON"
         app:layout_constraintTop_toBottomOf="@id/buttonAuckland"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
 
     <Button
         android:id="@+id/buttonChristchurch"
@@ -60,7 +63,8 @@
         android:text="CHRISTCHURCH"
         app:layout_constraintTop_toBottomOf="@id/buttonDunedin"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
 
     <Button
         android:id="@+id/buttonTauranga"
@@ -72,7 +76,8 @@
         android:text="TAURANGA"
         app:layout_constraintTop_toBottomOf="@id/buttonChristchurch"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
 
     <Button
         android:id="@+id/buttonHamilton"
@@ -84,7 +89,8 @@
         android:text="HAMILTON"
         app:layout_constraintTop_toBottomOf="@id/buttonWellington"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
 
     <Button
         android:id="@+id/buttonTaurang"
@@ -96,7 +102,8 @@
         android:text="TAURANGA2"
         app:layout_constraintTop_toBottomOf="@id/buttonTauranga"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
 
     <Button
         android:id="@+id/buttonHamiltoe"
@@ -108,7 +115,8 @@
         android:text="HAMILTON2"
         app:layout_constraintTop_toBottomOf="@id/buttonHamilton"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:onClick="btnClick"/>
         <Button
             android:id="@+id/buttonTauran2g"
             android:layout_width="0dp"
@@ -119,7 +127,8 @@
             android:text="TAURANGA2"
             app:layout_constraintTop_toBottomOf="@id/buttonTaurang"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_margin="15dp"/>
+            android:layout_margin="15dp"
+            android:onClick="btnClick"/>
 
         <Button
             android:id="@+id/buttonHamil3toe"
@@ -131,7 +140,8 @@
             android:text="HAMILTON2"
             app:layout_constraintTop_toBottomOf="@id/buttonHamiltoe"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_margin="15dp"/>
+            android:layout_margin="15dp"
+            android:onClick="btnClick"/>
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

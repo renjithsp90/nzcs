@@ -41,6 +41,8 @@ public class ListAdapter extends ArrayAdapter<College> implements android.widget
         //Bitmap bmp = ImageManager.getImage(contact.image);
         //contactImg.setImageBitmap(bmp);
 
+        final TextView txtName = (TextView)convertView.findViewById(R.id.txtName);
+        txtName.setText(college.name);
         final TextView txtLocation = (TextView)convertView.findViewById(R.id.txtLocation);
         txtLocation.setText(college.location);
         return convertView;

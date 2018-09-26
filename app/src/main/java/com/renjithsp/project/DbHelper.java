@@ -201,6 +201,36 @@ public class DbHelper extends SQLiteOpenHelper {
         return array_list;
     }
 
+    public ArrayList<College> getCollagesByType(String type) {
+        ArrayList<College> array_list = new ArrayList<College>();
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("select * from " + COLLEGE_TABLE_NAME + " where " + COLLEGE_COLUMN_TYPE + " = '" + type + "';", null);
+        if (res != null && res.getCount() > 0) {
+            if (res.moveToFirst()) {
+                do {
+                    //DatabaseUtils.dumpCursorToString(res);
+                    int id = res.getInt(res.getColumnIndex(COLLEGE_COLUMN_ID));
+                    String name = res.getString(res.getColumnIndex(COLLEGE_COLUMN_NAME));
+                    String typ = res.getString(res.getColumnIndex(COLLEGE_COLUMN_TYPE));
+                    String description = res.getString(res.getColumnIndex(COLLEGE_COLUMN_DESCRIPTION));
+                    String image = res.getString(res.getColumnIndex(COLLEGE_COLUMN_IMAGE));
+                    String phone = res.getString(res.getColumnIndex(COLLEGE_COLUMN_PHONE));
+                    String email = res.getString(res.getColumnIndex(COLLEGE_COLUMN_EMAIL));
+                    String website = res.getString(res.getColumnIndex(COLLEGE_COLUMN_WEBSITE));
+                    String address = res.getString(res.getColumnIndex(COLLEGE_COLUMN_ADDRESS));
+                    String loc = res.getString(res.getColumnIndex(COLLEGE_COLUMN_LOCATION));
+                    int ratng = res.getInt(res.getColumnIndex(COLLEGE_COLUMN_RATING));
+                    College college = new College(id, name, typ, description, image,
+                            phone, email, website, address, loc, ratng);
+                    array_list.add(college);
+                    //res.moveToNext();
+                } while (res.moveToNext());
+            }
+        }
+        return array_list;
+    }
+
     /*public ArrayList<PersonalInfo> getPersonalInfo() {
         ArrayList<PersonalInfo> array_list = new ArrayList<PersonalInfo>();
 

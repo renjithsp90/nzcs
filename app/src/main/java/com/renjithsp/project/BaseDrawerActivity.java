@@ -105,11 +105,19 @@ public class BaseDrawerActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.nav_poly) {
             //toolbar.setTitle(getResources().getString(R.string.nav_header_poly));
-            Intent intent = new Intent(this,poly.class);
+            //Intent intent = new Intent(this,poly.class);
+            //startActivity(intent);
+            Intent intent = new Intent(getBaseContext(), ShowListActivity.class);
+            intent.putExtra("FilterType", "TYPE");
+            intent.putExtra("TYPE", "Polytechnic");
             startActivity(intent);
         } else if (id == R.id.nav_university) {
             //toolbar.setTitle(getResources().getString(R.string.nav_header_uni));
-            Intent intent = new Intent(this,uni.class);
+            //Intent intent = new Intent(this,uni.class);
+            //startActivity(intent);
+            Intent intent = new Intent(getBaseContext(), ShowListActivity.class);
+            intent.putExtra("FilterType", "TYPE");
+            intent.putExtra("TYPE", "University");
             startActivity(intent);
         } else if (id == R.id.nav_about) {
             //toolbar.setTitle(getResources().getString(R.string.nav_header_aboutus));

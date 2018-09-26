@@ -18,18 +18,27 @@ public class location extends BaseDrawerActivity {
         toolbar.setTitle(getResources().getString(R.string.nav_header_location));
         final Context context = this;
 
-        Button btnAuckland = (Button)findViewById(R.id.buttonAuckland);
+        /*Button btnAuckland = (Button)findViewById(R.id.buttonAuckland);
         btnAuckland.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, ShowListActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
     }
     @Override
     protected void onResume() {
         super.onResume();
         navigationView.getMenu().getItem(1).setChecked(true);
+    }
+
+    public void btnClick(View view) {
+        Button button = (Button)view;
+        String location = button.getText().toString();
+        Intent intent = new Intent(getBaseContext(), ShowListActivity.class);
+        intent.putExtra("FilterType", "LOCATION");
+        intent.putExtra("LOCATION", location);
+        startActivity(intent);
     }
 }
