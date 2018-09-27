@@ -24,13 +24,24 @@ public class ShowListActivity extends BaseDrawerActivity {
         String filterType = getIntent().getStringExtra("FilterType");
         filterValue = getIntent().getStringExtra(filterType);
         txtLocation.setText(filterValue);
-        toolbar.setTitle(filterValue);
+
+        if(filterType.contains("RATING")){
+            toolbar.setTitle("Colleges");
+        } else {
+            toolbar.setTitle(filterValue);
+        }
         switch (filterType) {
             case "LOCATION":
                 colleges = db.getCollagesByLocation(filterValue);
                 break;
             case "TYPE":
                 colleges = db.getCollagesByType(filterValue);
+                break;
+            case "COURSE":
+                colleges = db.getCollegesByCourse(filterValue);
+                break;
+            case "RATING":
+                colleges = db.getCollagesByRating();
                 break;
         }
 
@@ -48,7 +59,12 @@ public class ShowListActivity extends BaseDrawerActivity {
             case "University":
                 navigationView.getMenu().getItem(4).setChecked(true);
                 break;
+            case "RATING":
+                navigationView.getMenu().getItem(0).setChecked(true);
+                break;
+            default:
+                navigationView.getMenu().getItem(2).setChecked(true);
+                break;
         }
-
     }
 }

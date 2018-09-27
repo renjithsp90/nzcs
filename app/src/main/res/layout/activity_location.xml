@@ -23,7 +23,7 @@
         android:drawableTop="@drawable/ic_location_city"
         app:layout_constraintWidth_percent="0.45"
         android:height="150dp"
-        android:text="Auckland"
+        android:text="AUCKLAND"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_margin="15dp"
         android:onClick="btnClick"/>

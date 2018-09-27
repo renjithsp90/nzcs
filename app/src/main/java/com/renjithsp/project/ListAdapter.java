@@ -37,7 +37,10 @@ public class ListAdapter extends ArrayAdapter<College> implements android.widget
                     R.layout.list_card_layout, parent, false);
         }
 
-        final ImageView contactImg = (ImageView) convertView.findViewById(R.id.lstCollege);
+        final ImageView collegeImg = (ImageView) convertView.findViewById(R.id.imgCollege);
+        String mDrawableName = "r" + college.collegeID;
+        int resID = convertView.getResources().getIdentifier(mDrawableName , "drawable", convertView.getContext().getPackageName());
+        collegeImg.setImageResource(resID);
         //Bitmap bmp = ImageManager.getImage(contact.image);
         //contactImg.setImageBitmap(bmp);
 

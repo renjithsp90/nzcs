@@ -23,9 +23,10 @@
             android:layout_margin="15dp"
             android:height="150dp"
             android:drawableTop="@drawable/ic_local_courses"
-            android:text="HOSPITALITY MANAGEMENT"
+            android:text="Hospitality Management"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintWidth_percent="0.45" />
+            app:layout_constraintWidth_percent="0.45"
+            android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonBusiness"
@@ -34,9 +35,10 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="BUNINESS MANAGEMENT"
+                android:text="Business Management"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonRetail"
@@ -45,10 +47,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="RETAIL INDUSTRY"
+                android:text="Retail Industry"
                 app:layout_constraintTop_toBottomOf="@id/buttonHospitality"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonConstruction"
@@ -57,10 +60,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="CONSTRUCTION MANAGEMENT"
+                android:text="Construction Management"
                 app:layout_constraintTop_toBottomOf="@id/buttonBusiness"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonElectrical"
@@ -69,10 +73,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="ELECTRICAL ENGINEERING"
+                android:text="Electrical Engineering"
                 app:layout_constraintTop_toBottomOf="@id/buttonRetail"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonIT"
@@ -81,10 +86,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="INFORMATION TECHNOLOGY"
+                android:text="Information Technology"
                 app:layout_constraintTop_toBottomOf="@id/buttonConstruction"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonApplied"
@@ -93,10 +99,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="APPLIED MANAGEMENT"
+                android:text="Applied Management"
                 app:layout_constraintTop_toBottomOf="@id/buttonElectrical"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonMarketing"
@@ -105,10 +112,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="MARKETING"
+                android:text="Marketing"
                 app:layout_constraintTop_toBottomOf="@id/buttonIT"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
             <Button
                 android:id="@+id/buttonLogistics"
                 android:layout_width="0dp"
@@ -116,10 +124,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="LOGISTICS"
+                android:text="Logistics"
                 app:layout_constraintTop_toBottomOf="@id/buttonApplied"
                 app:layout_constraintLeft_toLeftOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
             <Button
                 android:id="@+id/buttonMechanical"
@@ -128,10 +137,11 @@
                 android:drawableTop="@drawable/ic_local_courses"
                 app:layout_constraintWidth_percent="0.45"
                 android:height="150dp"
-                android:text="MECHANICAL ENGINEERING"
+                android:text="Mechanical Engineering"
                 app:layout_constraintTop_toBottomOf="@id/buttonMarketing"
                 app:layout_constraintRight_toRightOf="parent"
-                android:layout_margin="15dp"/>
+                android:layout_margin="15dp"
+                android:onClick="btnClick"/>
 
         </android.support.constraint.ConstraintLayout>
     </ScrollView>

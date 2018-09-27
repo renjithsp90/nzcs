@@ -26,6 +26,12 @@ public class MainActivity extends BaseDrawerActivity {
         getLayoutInflater().inflate(R.layout.activity_main, frameLayout);
         getLayoutInflater().inflate(R.layout.content_main, frameLayout);
         db = new DbHelper(this);
+
+        Intent intent = new Intent(getBaseContext(), ShowListActivity.class);
+        intent.putExtra("FilterType", "RATING");
+        intent.putExtra("RATING", "RATING");
+        startActivity(intent);
+        finish();
     }
     @Override
     protected void onResume() {
