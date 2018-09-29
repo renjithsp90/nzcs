@@ -36,7 +36,9 @@
         <activity android:name=".uni" />
         <activity android:name=".BaseDrawerActivity" />
         <activity android:name=".view_detail" />
-        <activity android:name=".ShowListActivity"></activity>
+        <activity android:name=".ShowListActivity" />
+        <activity android:name=".CollegeDetailsActivity" />
+        <activity android:name=".ContactActivity"></activity>
     </application>
 
 </manifest>

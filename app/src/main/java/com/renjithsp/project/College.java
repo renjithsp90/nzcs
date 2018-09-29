@@ -1,8 +1,12 @@
 package com.renjithsp.project;
 
+import android.os.Parcelable;
+
 public class College {
     public int collegeID, rating;
     public String name, type, description, image, phone, email, website, address, location;
+
+    public College(){}
 
     public  College(int collegeID, String name, String type, String description, String image,
                     String phone, String email, String website, String address, String location, int rating){

@@ -231,6 +231,58 @@ public class DbHelper extends SQLiteOpenHelper {
         return array_list;
     }
 
+    public ArrayList<Course> getCourses(int collegeID){
+        ArrayList<Course> array_list = new ArrayList<Course>();
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("select * from " + COURSE_TABLE_NAME + " where " + COURSE_COLLEGE_ID + " = '" + collegeID + "';", null);
+        if (res != null && res.getCount() > 0) {
+            if (res.moveToFirst()) {
+                do {
+                    //DatabaseUtils.dumpCursorToString(res);
+                    int id = res.getInt(res.getColumnIndex(COURSE_COLUMN_ID));
+                    int collegeid = res.getInt(res.getColumnIndex(COURSE_COLLEGE_ID));
+                    String name = res.getString(res.getColumnIndex(COURSE_COLUMN_NAME));
+
+                    Course course = new Course(id, collegeid, name);
+                    array_list.add(course);
+                    //res.moveToNext();
+                } while (res.moveToNext());
+            }
+        }
+        return array_list;
+    }
+
+    public College getCollagesByID(int collegeID) {
+        College college = new College();
+
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res = db.rawQuery("select * from " + COLLEGE_TABLE_NAME + " where " + COLLEGE_COLUMN_ID + " = '" + collegeID + "';", null);
+        if (res != null && res.getCount() > 0) {
+            if (res.moveToFirst()) {
+                do {
+                    //DatabaseUtils.dumpCursorToString(res);
+                    int id = res.getInt(res.getColumnIndex(COLLEGE_COLUMN_ID));
+                    String name = res.getString(res.getColumnIndex(COLLEGE_COLUMN_NAME));
+                    String typ = res.getString(res.getColumnIndex(COLLEGE_COLUMN_TYPE));
+                    String description = res.getString(res.getColumnIndex(COLLEGE_COLUMN_DESCRIPTION));
+                    String image = res.getString(res.getColumnIndex(COLLEGE_COLUMN_IMAGE));
+                    String phone = res.getString(res.getColumnIndex(COLLEGE_COLUMN_PHONE));
+                    String email = res.getString(res.getColumnIndex(COLLEGE_COLUMN_EMAIL));
+                    String website = res.getString(res.getColumnIndex(COLLEGE_COLUMN_WEBSITE));
+                    String address = res.getString(res.getColumnIndex(COLLEGE_COLUMN_ADDRESS));
+                    String loc = res.getString(res.getColumnIndex(COLLEGE_COLUMN_LOCATION));
+                    int ratng = res.getInt(res.getColumnIndex(COLLEGE_COLUMN_RATING));
+                    college = new College(id, name, typ, description, image,
+                            phone, email, website, address, loc, ratng);
+                    //array_list.add(college);
+                    //res.moveToNext();
+                } while (res.moveToNext());
+            }
+        }
+        return college;
+    }
+
     public ArrayList<College> getCollagesByRating() {
         ArrayList<College> array_list = new ArrayList<College>();
 
